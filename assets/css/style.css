@@ -39,7 +39,7 @@ div.sun {
     left: -250px;
     outline: 1px dashed #fff;
     outline-offset: 500px;
-    animation: spin-stars 900s linear infinite, sun 30s infinite;
+    animation: spin-stars 500s linear infinite, sun 30s infinite;
     cursor: pointer;
 }
 
