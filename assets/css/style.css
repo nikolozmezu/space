@@ -1,6 +1,6 @@
 html, body {
     min-height: 100vh;
-    background-image: url("assets/media/stars.svg"), linear-gradient( 17.9deg, #153346 0.2%, #011B3C 85.8% );
+    background-image: url("../../assets/media/stars.svg"), linear-gradient( 17.9deg, #153346 0.2%, #011B3C 85.8% );
     overflow: hidden;
     color: #fff;
     font-size: 24px;
@@ -9,7 +9,7 @@ html, body {
 }
 
 div.space {
-    background: url("assets/media/stars.svg");
+    background: url("../../assets/media/stars.svg");
     position: fixed;
     width: 200vw;
     height: 200vh;
@@ -46,7 +46,7 @@ div.sun {
 div.earth {
     width: 240px;
     height: 240px;
-    background: url("assets/media/earth.png");
+    background: url("../../assets/media/earth.png");
     background-size: 100%;
     position: absolute;
     top: -200px;
@@ -63,7 +63,7 @@ div.earth {
 div.moon {
     width: 70px;
     height: 70px;
-    background: url("assets/media/moon.png");
+    background: url("../../assets/media/moon.png");
     background-size: 100%;
     position: absolute;
     left: -107px;
