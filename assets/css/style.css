@@ -1,0 +1,80 @@
+html, body {
+    min-height: 100vh;
+    background-image: url("assets/media/stars.svg"), linear-gradient( 17.9deg, #153346 0.2%, #011B3C 85.8% );
+    overflow: hidden;
+    color: #fff;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+
+div.space {
+    background: url("assets/media/stars.svg");
+    position: fixed;
+    width: 200vw;
+    height: 200vh;
+    top: 50%;
+    left: 50%;
+    margin-top: -100vh;
+    margin-left: -100vw;
+    animation: spin-stars 240s linear infinite;
+    background-size: 240px;
+    backface-visibility: visible;
+    filter: blur(.7px)
+}
+
+@keyframes spin-stars {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+div.sun {
+    display: block;
+    width: 450px;
+    height: 450px;
+    background:radial-gradient(circle at 50% 50%, rgba(212, 0, 0, 1) 5%, rgba(255, 255, 0, 1) 55%, rgba(0, 0, 0, 0) 69%);
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0px;
+    left: -250px;
+    outline: 1px dashed #fff;
+    outline-offset: 500px;
+    animation: spin-stars 900s linear infinite, sun 30s infinite;
+    cursor: pointer;
+}
+
+div.earth {
+    width: 240px;
+    height: 240px;
+    background: url("assets/media/earth.png");
+    background-size: 100%;
+    position: absolute;
+    top: -200px;
+    left: 750px;
+    animation: spin-stars 100s linear infinite;
+    outline: 2px dashed #fff;
+    outline-offset: 90px;
+    border-radius: 50%;
+    box-shadow: -11px 1px 24px #fff;
+    cursor: pointer;
+    transform: scale(.5);
+}
+
+div.moon {
+    width: 70px;
+    height: 70px;
+    background: url("assets/media/moon.png");
+    background-size: 100%;
+    position: absolute;
+    left: -107px;
+    animation: spin-stars 30s linear infinite;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+@keyframes sun {
+    0% { left: -250px; width: 450px; height: 450px; outline-offset: 500px; }
+    50% { left: -350px; width: 600px; height: 600px; outline-offset: 410px; }
+    100% { left: -250px; width: 450px; height: 450px; outline-offset: 500px; }
+}
