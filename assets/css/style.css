@@ -78,3 +78,34 @@ div.moon {
     50% { left: -350px; width: 600px; height: 600px; outline-offset: 410px; }
     100% { left: -250px; width: 450px; height: 450px; outline-offset: 500px; }
 }
+
+/* mobile devices */
+
+@media only screen and ( max-width: 553px) {
+    
+    html,body {
+        min-height: 150vh !important;
+    }
+
+    div.sun {
+        width: 250px !important;
+        height: 250px !important;
+        left: 15px !important;
+        outline-offset: 200px !important;
+    }
+
+    div.earth {
+        width: 100px !important;
+        height: 100px !important;
+        top: -250px !important;
+        left: 87px !important;
+        outline-offset: 60px !important;
+
+    }
+
+    div.moon {
+        left: 130px !important;
+        width: 50px;
+        height: 50px;
+    }
+}
