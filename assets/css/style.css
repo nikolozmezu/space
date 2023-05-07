@@ -46,7 +46,7 @@ div.sun {
 div.earth {
     width: 240px;
     height: 240px;
-    background: url("../../assets/media/earth.png");
+    background: url("../../assets/media/earth.webp");
     background-size: 100%;
     position: absolute;
     top: -200px;
@@ -63,7 +63,7 @@ div.earth {
 div.moon {
     width: 70px;
     height: 70px;
-    background: url("../../assets/media/moon.png");
+    background: url("../../assets/media/moon.webp");
     background-size: 100%;
     position: absolute;
     left: -107px;
