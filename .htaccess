@@ -1,0 +1,9 @@
+# Cache specified files for one year
+<FilesMatch "\.(jpg|jpeg|png|gif|js|css)$">
+Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
+
+# Cache all other files for 1 day
+<FilesMatch "^(?!.*\.(jpg|jpeg|png|gif|js|css)$)">
+Header set Cache-Control "max-age=86400, public"
+</FilesMatch>
